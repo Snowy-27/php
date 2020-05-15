@@ -1,4 +1,4 @@
-<?php $bdd = new PDO('mysql:host=localhost;dbname=site;charset=utf8', 'root', ''); ?>
+<?php $bdd = new PDO('mysql:host=localhost;dbname=site;charset=utf8', 'snowy', 'toor'); ?>
 <!DOCTYPE html>
 <html>
 <head>
