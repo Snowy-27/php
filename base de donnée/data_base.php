@@ -12,9 +12,9 @@
 <?php
 
 $bdd = new PDO('mysql:host=localhost;dbname=cb;charset=utf8', 'root', '');
-$req = $bdd->prepare('INSERT INTO `carte`(`num`, `exp`, `cvv`) VALUES (?,?,?)');
+$req = $bdd->prepare('INSERT INTO `user`(`name`, `email`) VALUES (?,?)');
 
-$req->execute(array($_POST['cb'], $_POST['exp'], $_POST['cvv']));
+$req->execute(array($_POST['name'], $_POST['email']));
 header('Location: index.php')
 ?>
 </body>
